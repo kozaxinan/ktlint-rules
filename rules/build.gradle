@@ -1,8 +1,9 @@
 plugins {
   id 'org.jetbrains.kotlin.jvm'
   id 'java-library'
-  id 'com.github.dcendents.android-maven'
 }
+
+group = "com.github.kozaxinan"
 
 dependencies {
   compileOnly 'com.pinterest.ktlint:ktlint-core:0.36.0'
