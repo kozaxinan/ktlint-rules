@@ -15,9 +15,16 @@ allprojects {
     }
 }
 
+
+// if you are using https://github.com/JLLeitschuh/ktlint-gradle
 dependencies {
-    implementation 'com.github.kozaxinan:ktlint-rules:0.1'
+    ktlintRuleset("com.github.kozaxinan:ktlint-rules:0.1")
 }
+```
+
+```
+// For ktlint command line, you need to download jar file and pass to ktlint.
+ktlint -R /path/to/custom/rulseset.jar
 ```
 
 # License
